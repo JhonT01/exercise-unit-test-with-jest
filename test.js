@@ -10,7 +10,7 @@ test('adds 14 + 9 to equal 23', () => {
     expect(total).toBe(23);
 });
 
-test("One euro should be 1.206 dollars", function(){
+test("One euro should be 1.2 dollars", function(){
     // importo la funcion desde app.js
     const { fromEuroToDollar } = require('./app.js')
     
