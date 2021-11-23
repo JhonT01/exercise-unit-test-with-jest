@@ -8,14 +8,14 @@ const fromEuroToDollar = function(valueInEuro){
 
 const fromDollarToYen = function(valueInDollar){
     // convertimos el valor a dolares
-    let valueInYen = (valueInDollar * 127.9) / 1.2 ;
+    let valueInYen = (valueInDollar * oneEuroIs.JPY) / oneEuroIs.USD ;
     // retornamos el valor
     return valueInYen;
 }
 
 const fromYenToPound = function(valueInYen){
     // convertimos el valor a dolares
-    let valueInPound = (valueInYen / 127.9) * 0.8;
+    let valueInPound = (valueInYen * oneEuroIs.GBP) / oneEuroIs.JPY;
     // retornamos el valor
     return valueInPound;
 }
